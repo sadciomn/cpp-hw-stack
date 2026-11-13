@@ -47,7 +47,7 @@ inline void Pop(Stack* stack)
     }
 }
 
-inline const char* Top(Stack* stack)
+inline const char* Top(const Stack* stack)
 {
     if (stack->top == nullptr)
     {
@@ -55,7 +55,7 @@ inline const char* Top(Stack* stack)
     }
     return stack->top->str;
 }
-inline int& Size(Stack* stack) { return stack->size; }
+inline int Size(const Stack* stack) { return stack->size; }
 
 inline void Clear(Stack* stack)
 {
